@@ -25,6 +25,7 @@ def send_request(req):
                     1 --> first metric : average time between pull requests for a given repository parameter
                     2 --> second metric : total number of events grouped by the event type for a given offset
                     3 --> bouns metric : Visualize for second metric
+                    4 --> added metric : last pr for a given repository parameter
     return: - None
     '''
 
@@ -40,11 +41,14 @@ def send_request(req):
         response = requests.get(Base+"/visualize/" + str(offset)) 
         print(response.json())
 
+    elif req == 4: 
+        response = requests.get(Base+"/lastchange/" + str(repo_param)) 
+        print(response.json())
     else:
-        print("sorry! invalid paramter, Please put from 1, 2 or 3")        
+        print("sorry! invalid paramter, Please choose from 1 to 4")        
 
 
 if __name__ == '__main__':
     # get the required metrics
-    send_request(1)  
+    send_request(4)  
 

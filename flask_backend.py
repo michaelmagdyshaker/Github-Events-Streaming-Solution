@@ -4,7 +4,6 @@
 '''
 ##########################################################################################################################################################################import sqlite3
 
-from tokenize import String
 from flask import Flask
 from flask_restful import Api,Resource
 import server 
@@ -31,6 +30,12 @@ class Github_Events (Resource):
     def visualize_total_number_of_events(offset):
         #call the visualize_total_number_of_events in the server side
         return(server.visualize_total_number_of_events(int(offset)))
+        
+    @app.route("/lastchange/<string:repo>", methods=['GET', 'POST'])
+    def last_pr_on_repo(repo):
+        #call the get_last_PR_on_repo in the server side
+        return(server.get_last_PR_on_repo(repo))
+    
 
 if __name__ == '__main__':
     # start flask app service
