@@ -50,8 +50,6 @@ def get_avg_repo_time(repo):
     return {"return":return_string}
 
 
-
-
 def get_last_PR_on_repo(repo):
     ''''
     input:
@@ -90,7 +88,6 @@ def get_last_PR_on_repo(repo):
     return {"return":return_string}
 
 
-
 def get_changes_over_time_for_repo(repo):
     ''''
     input:
@@ -127,7 +124,6 @@ def get_changes_over_time_for_repo(repo):
         sqliteConnection.close()
 
     return {repo:dates}
-
 
 
 def get_total_number_of_events(offset):
@@ -179,7 +175,6 @@ def get_total_number_of_events(offset):
             dic[record[i][0]] =record[i][1]
 
     return dic
-
 
 
 def visualize_total_number_of_events(offset):

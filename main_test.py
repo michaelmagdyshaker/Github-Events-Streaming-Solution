@@ -42,7 +42,7 @@ def send_request(req):
         print(response.json())
 
     elif req == 4: 
-        response = requests.get(Base+"/lastchange/" + str(repo_param)) 
+        response = requests.get(Base+"/lastchange/" + repo_param.replace('/','__')) 
         print(response.json())
     else:
         print("sorry! invalid paramter, Please choose from 1 to 4")        
@@ -50,5 +50,5 @@ def send_request(req):
 
 if __name__ == '__main__':
     # get the required metrics
-    send_request(4)  
+    send_request(3)  
 
