@@ -19,7 +19,8 @@ Streaming and filter out three types of events from Github API and calculate met
     (host+"/"/events/<int:offset>")
     (host+"/visualize/<int:offset>")
     (host+"/lastchange/<string:repo>")
-    
+    ![c4_d](https://user-images.githubusercontent.com/24366936/180619132-52813eb8-9958-460d-8c19-b1f96546d41c.png)
+
 ### Getting Started
 * just clone the repo locally from https://github.com/michaelmagdyshaker/lely_assignment
 * download SQLlight studio to interface with the database from https://sqlitestudio.pl/ then import github_events.db file
@@ -62,8 +63,12 @@ Streaming and filter out three types of events from Github API and calculate met
      python main_test.py
   ```
 * send requests to the provided endpoints above using postman or any testing tool
+* in the front-end, the param after the routing endpoint will be replace with a special character "__" to handle the forward slashes
 * enjoy the results and visuals :) 
 ![image](https://user-images.githubusercontent.com/24366936/180618113-dfb596fa-0603-4e85-b703-4888b95b948a.png)
+![image](https://user-images.githubusercontent.com/24366936/180619287-efc1d8ee-3d32-475a-a837-03f4cac3b3a8.png)
+![image](https://user-images.githubusercontent.com/24366936/180619313-76d8f2c8-4590-4196-b46d-1b9e332c6313.png)
+![image](https://user-images.githubusercontent.com/24366936/180619509-1f536e74-ebec-4bb7-a724-195fac8fe671.png)
 
 
 ## Help
