@@ -3,18 +3,10 @@
                       This is the application server side, where quering on the database and the getting the metrics happen
 '''
 ##########################################################################################################################################################################import sqlite3
-from datetime import datetime,timedelta
-import time
-from numpy import rec
-import pandas as pd
 import matplotlib.pyplot as plt
 import os
-from time import sleep
-from includes.sqlScripts import scripts
-from flask import Flask
-from flask_restful import Api,Resource
-from matplotlib import dates as mdates
 import sqlite3
+from includes.sqlScripts import scripts
 
 # set the database name in the current directory
 db_name=os.getcwd() + '/github_events.db'
@@ -122,8 +114,6 @@ def get_changes_over_time_for_repo(repo):
             print("No Repo found with parameter contains '{0}'".format(repo))
 
         else:
-            # print("changes over time for repo parameter contains: '{0}' = {1}".format(repo, record))
-            # return_string = ("changes over time for repo parameter contains: '{0}' = {1}".format(repo, record))
             dates=[]
             for i in range(len(record)):
                 dates.append(record[i][0])
