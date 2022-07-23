@@ -21,6 +21,14 @@ Streaming and filter out three types of events from Github API and calculate met
     - (host+"/lastchange/<string:repo>")
     
     ![c4_d](https://user-images.githubusercontent.com/24366936/180619132-52813eb8-9958-460d-8c19-b1f96546d41c.png)
+    
+    for /pr/ endpoint, feel free to search using any of repos or pr fields 
+    and for /lastchange/ endppint free to search using any of repos fields
+    
+    
+![image](https://user-images.githubusercontent.com/24366936/180620242-cd159505-97df-4a30-8d29-8a71d44dc8d3.png)
+![image](https://user-images.githubusercontent.com/24366936/180620291-d36b5748-9ed1-424d-9faa-575c4a15c505.png)
+
 
 ### Getting Started
 * just clone the repo locally from https://github.com/michaelmagdyshaker/lely_assignment
