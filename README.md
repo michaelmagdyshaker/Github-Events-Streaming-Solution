@@ -1,6 +1,8 @@
 # Github Events Streaming Solution 
 
 Streaming and filter out three types of events from Github API and calculate metrics over the data then constuct restful APIs
+
+
 ![image](https://user-images.githubusercontent.com/24366936/180618355-61defdc9-a5f8-4a6c-8f02-605445b5ce82.png)
 
 ## Description
@@ -46,6 +48,7 @@ Streaming and filter out three types of events from Github API and calculate met
 
 * clone and setup the dependices
 * run worker.py file sepreately before start the flask application (give it minutes to fill the db )
+    note: close it after finishing (like the fridge door) cause your ip will be blocked from the github events api 
   ```
      python worker.py
   ```
