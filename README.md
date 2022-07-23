@@ -15,10 +15,11 @@ Streaming and filter out three types of events from Github API and calculate met
 - Calculates metrics and quering on them 
 - Get some ueful insights and visualizations and answer qustions.
 - Consrruct an enpoints for restful APIs using Flask
-    (host+"/pr/<string:repo>")
-    (host+"/"/events/<int:offset>")
-    (host+"/visualize/<int:offset>")
-    (host+"/lastchange/<string:repo>")
+    - (host+"/pr/<string:repo>")
+    - (host+"/"/events/<int:offset>")
+    - (host+"/visualize/<int:offset>")
+    - (host+"/lastchange/<string:repo>")
+    
     ![c4_d](https://user-images.githubusercontent.com/24366936/180619132-52813eb8-9958-460d-8c19-b1f96546d41c.png)
 
 ### Getting Started
@@ -65,6 +66,7 @@ Streaming and filter out three types of events from Github API and calculate met
 * send requests to the provided endpoints above using postman or any testing tool
 * in the front-end, the param after the routing endpoint will be replace with a special character "__" to handle the forward slashes
 * enjoy the results and visuals :) 
+
 ![image](https://user-images.githubusercontent.com/24366936/180618113-dfb596fa-0603-4e85-b703-4888b95b948a.png)
 ![image](https://user-images.githubusercontent.com/24366936/180619287-efc1d8ee-3d32-475a-a837-03f4cac3b3a8.png)
 ![image](https://user-images.githubusercontent.com/24366936/180619313-76d8f2c8-4590-4196-b46d-1b9e332c6313.png)
