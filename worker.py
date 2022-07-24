@@ -4,6 +4,7 @@
 '''
 ##########################################################################################################################################################################
 
+from email import message
 import requests
 import os 
 import sys
@@ -36,17 +37,21 @@ def scrape(url, interested_types):
     '''
     # get and clone the events from the github public endpoint    
     r = requests.get(url)
-    if "https://docs.github.com/en/rest/overview/resources-in-the-rest-api#rate-limiting" in r: # exceeded the limit
-        print("you exceeded the requests limit!")
-        sys.exit() 
-    # convert to json 
+    # convert to json
     cont = r.json() 
     # the return list of filtered events
     interested_events=[]
+    try:
+        for t in range(len(cont)): 
+            if cont[t]['type'] in (interested_types):
+                interested_events.append(cont[t])
+    
+    # check id exceeded the requests rate
+    except:
+        if "API rate limit exceeded" in (r.json())['message']:
+            sys.exit("you exceeded the requests rate!")
+    
     # filter out the parsed cloned event types for each event
-    for t in range(len(cont)): 
-        if cont[t]['type'] in (interested_types):
-            interested_events.append(cont[t])
     return interested_events
 
 
