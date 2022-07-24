@@ -2,13 +2,13 @@
 
 Streaming and filter out three types of events from Github API and calculate metrics over the data then constuct restful APIs
 
+    ![c4_d](https://user-images.githubusercontent.com/24366936/180619132-52813eb8-9958-460d-8c19-b1f96546d41c.png)
 
-![image](https://user-images.githubusercontent.com/24366936/180618355-61defdc9-a5f8-4a6c-8f02-605445b5ce82.png)
 
 ## Description
 *here is the steps of the application
 - Scraping the row events from pupblic Github API
-- Fitle for a specifc types (WatchEvent, PullRequestEvent and IssuesEvent)
+- Fitler for a specifc types (WatchEvent, PullRequestEvent and IssuesEvent)
 - Create a sql light DB and use data modeling concepts to create an data model and pipeline
 - Parse the data into structre format
 - Save it into sql light db
@@ -20,7 +20,8 @@ Streaming and filter out three types of events from Github API and calculate met
     - (host+"/visualize/<int:offset>")
     - (host+"/lastchange/<string:repo>")
     
-    ![c4_d](https://user-images.githubusercontent.com/24366936/180619132-52813eb8-9958-460d-8c19-b1f96546d41c.png)
+    ![image](https://user-images.githubusercontent.com/24366936/180648169-88b0eb22-cd51-4b1c-ab87-6917af197474.png)
+
     
     for /pr/ endpoint, feel free to search using any of repos or pr fields 
     and for /lastchange/ endppint free to search using any of repos fields
