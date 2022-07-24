@@ -2,8 +2,7 @@
 
 Streaming and filter out three types of events from Github API and calculate metrics over the data then constuct restful APIs
 
-
-![image](https://user-images.githubusercontent.com/24366936/180648206-d027b997-19ba-438d-b244-221a7320e020.png)
+![c4_d](https://user-images.githubusercontent.com/24366936/180648244-fe690eb4-373b-4e34-ab47-4ffbf37dbf88.png)
 
 
 
@@ -24,7 +23,7 @@ Streaming and filter out three types of events from Github API and calculate met
     
     ![image](https://user-images.githubusercontent.com/24366936/180648169-88b0eb22-cd51-4b1c-ab87-6917af197474.png)
 
-    
+
     for /pr/ endpoint, feel free to search using any of repos or pr fields 
     and for /lastchange/ endppint free to search using any of repos fields
     
