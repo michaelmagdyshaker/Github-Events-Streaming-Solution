@@ -2,7 +2,7 @@
 
 Streaming and filter out three types of events from Github API and calculate metrics over the data then constuct restful APIs
 
-![c4_d](https://user-images.githubusercontent.com/24366936/180648244-fe690eb4-373b-4e34-ab47-4ffbf37dbf88.png)
+![c4_d](https://user-images.githubusercontent.com/24366936/180652009-f4d5233c-aef2-4c4f-bd45-204d69bc758f.png)
 
 
 
